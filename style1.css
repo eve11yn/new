@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+
+}
+header{
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding: 70px;
+}
+nav{
+    background-color: dimgray;
+    padding: 25px;
+    text-align: center;
+}
+
+a{
+  padding-right: 20px;
+  color: rgb(240, 240, 240);
+  text-decoration: none;
+}
+
+
+main h2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+div {
+    
+    width: 250px;
+    background-color: teal;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    
+}
+
+.img1{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  
+}
