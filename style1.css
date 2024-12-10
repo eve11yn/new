@@ -1,16 +1,17 @@
 *{
     margin: 0;
     box-sizing: border-box;
+    font-family: Lato;
 
 }
 header{
-    background-color: gray;
+    background-color: #4345BC;
     color: white;
     text-align: center;
     padding: 70px;
 }
 nav{
-    background-color: dimgray;
+    background-color: #BCBA43;
     padding: 25px;
     text-align: center;
 }
@@ -21,26 +22,133 @@ a{
   text-decoration: none;
 }
 
+a:hover{
+    color: #BCBA43 ;
+    background-color: white;
+    padding: 30px;
+}
 
 main h2{
     padding-top: 20px;
     padding-bottom: 20px;
+    color: #4345BC;
 }
 
-div {
-    
-    width: 250px;
-    background-color: teal;
-    gap: 24px;
+main div{
     display: flex;
-    flex-direction: column;
-    padding: 8px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main div img{
+    width: 260px;
+    height: 260px;
+    flex-grow: 4;
+    margin: 10px;
+    margin-bottom: 10px; 
+}
+
+.text{
+    margin-bottom: 10px;
+}
+form .div-1{
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border-radius: 1em;
+    background-color: #4382BC;
+}
+
+form div + div{
+    margin-top: 1em;
+}
+
+
+input, textarea{
+    font: 1em lato;
+    width: 300px;
+    height: 40px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #999;
     
 }
 
-.img1{
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+
+textarea{
+   height: 5em;
+    
+}
+input:hover, textarea:hover{
+    border: 2px solid #BCBA43;
+}
+
+button{
+    display: flex;
+    flex: 50%;
+}
+@media (max-width: 600px){
   
+    nav{
+        background-color:#BCBA43;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    a{
+      padding-right: 10px;
+      color: rgb(240, 240, 240);
+      text-decoration: none;
+    }
+    a:hover{
+        padding: 15px;
+    }
+    form .div-1{
+        margin: 0 auto;
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+    }
+    button{
+       clear: both;
+       padding: 0;
+       margin: 0;
+       width: 100px;
+       height: 40%;
+      
+    }
+    
+footer{
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    margin-top: 50px ;
+    position: fixed;
+    width: 100%;
+    background-color: #BCBA43;
+    height: 10px;
+    color: white;
+    border-radius: 30px;
+    font-size: 18px;
+    
+}
+    }
+    
+    
+
+footer{
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #BCBA43;
+    height: 30px;
+    color: white;
+    border-radius: 30px;
+    font-size: 18px;
 }
