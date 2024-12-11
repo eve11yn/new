@@ -47,6 +47,7 @@ main div img{
     flex-grow: 4;
     margin: 10px;
     margin-bottom: 10px; 
+    object-fill: cover;
 }
 
 .text{
